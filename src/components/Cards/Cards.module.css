@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+
+}
+.heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  color: #e787a8;
+  font-size: calc(1em + 20vw);
+  font-weight: 900;
+  text-shadow: -0.0075em 0.0075em 0 #f387ad, 0.005em 0.005em 0 #f091b2, 0.01em 0.01em 0 #f59bbb, 0.015em 0.015em #eca1bb, 0.02em 0.02em 0 #f5abc5, 0.025em 0.025em 0 #ebabc1, 0.03em 0.03em 0 #f3b7cc, 0.035em 0.035em 0 #d39aae;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.infected {
+  border-bottom: 2px solid rgb(16, 16, 219);
+  border-radius: 20px !important ;
+  border-radius: 27px !important ;
+  color: rgb(16, 16, 219) !important ;
+  background: #e787a8 !important ;
+  background: linear-gradient(145deg, #eec6db, #d4abb8);
+  box-shadow: inset -5px -5px 12px #e7a7bc,
+              inset 5px 5px 12px #e787a8 !important ;
+  transition: transform .7s ease !important;
+}
+
+.infected:hover{
+  transform: scale(0.95) !important;
+}
+
+.recovered{
+  border-bottom: 2px solid rgb(33, 175, 33);
+  border-radius: 20px !important ;
+  border-radius: 27px !important ;
+  color: rgb(33, 175, 33) !important ;
+  background: #e787a8 !important ;
+  background: linear-gradient(145deg, #eec6db, #d4abb8);
+  box-shadow: inset -5px -5px 12px #e7a7bc,
+              inset 5px 5px 12px #e787a8 !important ;
+  transition: transform .7s ease !important;
+    }
+            
+.recovered:hover{
+  transform: scale(0.95) !important;
+}
+            
+.deaths{
+  border-bottom: 2px solid rgb(207, 38, 38);
+  border-radius: 20px !important ;
+  border-radius: 27px !important ;
+  color: rgb(207, 38, 38) !important;
+  background: #e787a8 !important ;
+  background: linear-gradient(145deg, #eec6db, #d4abb8);
+  box-shadow: inset -5px -5px 12px #e7a7bc,
+              inset 5px 5px 12px #e787a8 !important ;
+  transition: transform .7s ease !important;
+ 
+   }
+            
+.deaths:hover{
+  transform: scale(0.95) !important;
+}
+  
+h5{
+  font-size: 25px !important;
+  text-align: center !important;
+  margin-top: 15% !important;
+  background: -webkit-linear-gradient(#e9769e, #ee0f5d) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: -0.0075em 0.0075em 0 #f33376, 0.005em 0.005em 0 #f53f7f, 0.01em 0.01em 0 #f84a87, 0.015em 0.015em #fa558f, 0.02em 0.02em 0 #fa558f, 0.025em 0.025em 0 #fd6198, 0.03em 0.03em 0 #fc6d9f, 0.035em 0.035em 0 #fd7ba9 !important;
+}
+
+
+/* Safari
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} */
+
+
+
+/* img{
+  width: 1250px;
+  height: 500px;
+  filter: invert(48%) sepia(79%) saturate(246%) hue-rotate(60deg) brightness(118%) contrast(130%);
+  padding-right: 50px;
+} */
+
+/* @media only screen and (max-width: 600px) {
+.infected , .recovered,.deaths{
+margin: 25px !important;
+transition: transform .7s ease !important;
+}
+.deaths:hover{
+  transform: scale(1) !important;
+}
+.infected:hover {
+  transform: scale(1) !important;
+}
+.recovered:hover{
+  transform: scale(1) !important;
+}
+
+} */
+
+/* PHONE */
+@media only screen and (max-width:320px){
+  .infected , .recovered,.deaths{
+    margin: 25px !important;
+    transition: transform .7s ease !important;
+    }
+    .deaths:hover{
+      transform: scale(1) !important;
+    }
+    .infected:hover {
+      transform: scale(1) !important;
+
+    }
+    .recovered:hover{
+      transform: scale(1) !important;
+    }
+  }
+
+  /* TABLET */
+
+ @media only screen and (min-width:321px) and (max-width:768px){
+  .infected , .recovered,.deaths{
+    margin: 25px !important;
+    transition: transform .7s ease !important;
+    }
+    .deaths:hover{
+      transform: scale(1) !important;
+    }
+    .infected:hover {
+      transform: scale(1) !important;
+
+    }
+    .recovered:hover{
+      transform: scale(1) !important;
+    }
+ }
+
+ @media only screen and (min-width:769px) {
+ .container{
+  /* display: flex ;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  column-gap: 2rem;
+ }
+
+ }
